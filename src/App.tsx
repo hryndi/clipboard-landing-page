@@ -1,7 +1,5 @@
 import "./index.css";
 import LogoImg from "./assets/logo.svg";
-import HeaderMobi from "./assets/bg-header-mobile.png";
-import HeaderPC from "./assets/bg-header-desktop.png";
 import BlackListIcon from "./assets/icon-blacklist.svg";
 import FacebookIcon from "./assets/icon-facebook.svg";
 import InstagramIcon from "./assets/icon-instagram.svg";
