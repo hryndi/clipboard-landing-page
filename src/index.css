@@ -4,6 +4,79 @@
 @tailwind components;
 @tailwind utilities;
 
-.red {
-  background-color: red;
+.background {
+  background-image: url(./assets/bg-header-desktop.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+h1 {
+  @apply font-semibold text-4xl text-neutral-darkGrayBlue px-2;
+}
+h2 {
+  @apply font-semibold text-3xl py-5 text-neutral-darkGrayBlue px-2;
+}
+h3 {
+  @apply font-semibold text-xl  pb-2 text-neutral-darkGrayBlue;
+}
+p {
+  @apply text-neutral-grayBlue font-medium text-base;
+}
+
+.btn {
+  @apply py-3 px-6 text-white font-semibold text-xs rounded-full;
+}
+
+.blue-shadow {
+  -webkit-box-shadow: 10px 6px 31px -10px rgba(97, 115, 255, 1);
+  -moz-box-shadow: 10px 6px 31px -10px rgba(97, 115, 255, 1);
+  box-shadow: 10px 6px 31px -10px rgba(97, 115, 255, 1);
+  @apply bg-primary-lightBlue;
+}
+.green-shadow {
+  -webkit-box-shadow: 10px 6px 31px -10px rgba(38, 186, 164, 0.65);
+  -moz-box-shadow: 10px 6px 31px -10px rgba(38, 186, 164, 0.65);
+  box-shadow: 10px 6px 31px -10px rgba(38, 186, 164, 0.65);
+  @apply bg-primary-strongCyan;
+}
+
+.track-of-snippets-func {
+  @apply sm:w-7/12 pr-5  text-left max-sm:text-center;
+}
+.track-of-snippets-func p {
+  @apply text-sm leading-6;
+}
+
+.supercharge-your-worflow-w {
+  @apply mt-10 grid max-sm:gap-10 gap-5 grid-cols-3 grid-rows-1 max-sm:grid-cols-1 max-sm:px-6 px-32;
+}
+
+.supercharge-your-worflow-w div img {
+  @apply m-auto;
+}
+.logos-carusel {
+  width: 100%;
+}
+.foot div {
+}
+.foot a {
+  @apply block text-neutral-darkGrayBlue font-medium text-base;
+}
+.refs div {
+  display: flex;
+  flex-direction: column;
+}
+.foot div > a {
+  @apply my-3;
+}
+
+@media (max-width: 640px) {
+  .background {
+    background-image: url(./assets/bg-header-mobile.png);
+  }
+}
+@media (min-width: 641px) {
+  .refs div {
+    gap: 10px;
+  }
 }
